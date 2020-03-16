@@ -1,0 +1,29 @@
+<ion-app>
+  <ion-header class="ion-no-border">
+    <ion-toolbar color="primary">
+      <ion-buttons slot="start">
+        <a [routerLink]="['/assignment8-fadel']" routerLinkActive="router-link-active"
+          ><ion-icon color="light" slot="icon-only" text="Back" name="arrow-back"></ion-icon></a
+        >
+      </ion-buttons>
+      <ion-title>Fadel 8</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content>
+    <ion-card>
+      <ion-card-header>
+        <img src="{{imageUrl}}" alt="" />
+        <ion-card-title>{{title}}</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <h1>Ingridients :</h1>
+        <ion-list>
+          <ion-item *ngFor="let i of ingredients">
+            <ion-label>{{i}}</ion-label>
+          </ion-item>
+        </ion-list>
+      </ion-card-content>
+    </ion-card>
+  </ion-content>
+</ion-app>
